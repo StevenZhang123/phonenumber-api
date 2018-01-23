@@ -40,5 +40,5 @@ headers --> content-type: text/plain
 
 encoded --> form-data
 
-body --> { "file": "base6.txt" }
+body --> { "file": "base64.txt" }
 ```
