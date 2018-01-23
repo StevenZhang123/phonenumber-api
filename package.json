@@ -1,0 +1,17 @@
+{
+  "name": "phonenumber-api",
+  "version": "1.0.0",
+  "description": "api that extracts phone numbers from submitted resources",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhihao cai",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "libphonenumber-js": "^1.0.3",
+    "multer": "^1.3.0"
+  }
+}
