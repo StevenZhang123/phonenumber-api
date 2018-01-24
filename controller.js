@@ -40,15 +40,21 @@ router.get('/', (req, res) => { res.status(200).send('works'); });
 // e.g. http://localhost:5000/api/phonenumbers/parse/text/Seneca%20Phone%20Number%3A%20416-491-5050%2C6478603041%2Csometexts%2C6478603041
 router.get('/api/phonenumbers/parse/text/:str', function(req, res){
   var str = req.params.str;
-  var strArr = str.split(',');
   var phones = [];
-  phones = processRequest(strArr);
 
-  res.setHeader('Content-Type', 'application/json');
-  if(!phones.length){
-    res.status(400).send(phones);
+  if(str != undefined){
+    var strArr = str.split(',');
+    var phones = [];
+    phones = processRequest(strArr);
+
+    res.setHeader('Content-Type', 'application/json');
+    if(!phones.length){
+      res.status(400).send(phones);
+    }else{
+      res.status(200).send(phones);
+    }
   }else{
-    res.status(200).send(phones);
+    res.status(400).send(phones);       // if param str is not provided
   }
 });
 
