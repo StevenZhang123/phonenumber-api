@@ -18,6 +18,18 @@ describe("testing API endpoints:", function(){
     });
   });
 
+  describe("GET /api/phonenumbers/parse/text/", function() {
+    it("it should return an empty list []", function(done) {
+      chai.request(app)
+        .get('/api/phonenumbers/parse/text/')
+        .end(function(err, res){
+          expect(res).to.have.status(400);
+          expect(res.body).to.be.an('array').that.is.empty;
+          done();
+        });
+    });
+  });
+  
   describe("GET /api/phonenumbers/parse/text/nothing", function() {
     it("it should return an empty list []", function(done) {
       chai.request(app)
