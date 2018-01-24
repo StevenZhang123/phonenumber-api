@@ -16,12 +16,8 @@ in the terminal(command line):
 $ npm install --> to install all requierd package dependencies
 
 $ npm start --> to start localhost server
-```
 
-in browser:
-
-```
-http://localhost:5000 --> works
+$ curl localhost:5000 --> works
 ```
 
 ##### Postman
