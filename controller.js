@@ -21,7 +21,7 @@ function processRequest(strArr){
         flag++;
       }
     } catch (e) {
-      console.error('catch:', e);
+      // console.error('catch:', e);
     } finally {
     }
   }
