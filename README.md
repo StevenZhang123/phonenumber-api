@@ -1,40 +1,41 @@
 #### node rest api that utilizes [libphonenumber-js](https://github.com/catamphetamine/libphonenumber-js) library to extract phone numbers from submitted resources.
 
+---
+
 ##### support
 
 ```
-GET --> /api/phonenumbers/parse/text/{...string...}
+GET /api/phonenumbers/parse/text/{...string...}
 
-POST --> /api/phonenumbers/parse/file
+POST /api/phonenumbers/parse/file
 ```
 
 ##### getting started
 
-in the terminal(command line):
+open terminal(command line):
 
 ```
-$ npm install --> to install all requierd package dependencies
+$ npm install           // install requierd package dependencies
 
-$ npm start --> to start localhost server
+$ npm start             // start localhost server
 
-$ curl localhost:5000 --> works
+$ curl localhost:5000   // works
+
+$ npm test              // start mocha/chai test
 ```
 
-##### Postman
-
-for GET:
+##### using postman
 
 ```
-request url --> http://localhost:5000/api/phonenumbers/parse/text/Seneca%20Phone%20Number%3A%20416-491-5050
+GET     -->  http://localhost:5000/api/phonenumbers/parse/text/Seneca%20Phone%20Number%3A%20416-491-5050%2C6478003199
 ```
 
-for POST: 
 ```
-request url --> http://localhost:5000/api/phonenumbers/parse/file
+POST    -->  http://localhost:5000/api/phonenumbers/parse/file
 
-headers --> content-type: text/plain
+header  -->  content-type: text/plain
 
-encoded --> form-data
+encoded -->  form-data
 
-body --> { "file": "base64.txt" }
+body    --> { "file": "base64.txt" }
 ```
