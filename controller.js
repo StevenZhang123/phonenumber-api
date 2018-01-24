@@ -38,7 +38,7 @@ router.get('/', (req, res) => { res.status(200).send('works'); });
 
 // GET, allows comma-seperated strings
 // e.g. http://localhost:5000/api/phonenumbers/parse/text/Seneca%20Phone%20Number%3A%20416-491-5050%2C6478603041%2Csometexts%2C6478603041
-router.get('/api/phonenumbers/parse/text/:str', function(req, res){
+router.get('/api/phonenumbers/parse/text/:str?', function(req, res){
   var str = req.params.str;
   var phones = [];
 
