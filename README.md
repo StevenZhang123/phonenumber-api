@@ -2,7 +2,7 @@
 
 ---
 
-##### support
+#### support
 
 ```
 GET  /api/phonenumbers/parse/text/{...string...}
@@ -10,7 +10,7 @@ GET  /api/phonenumbers/parse/text/{...string...}
 POST /api/phonenumbers/parse/file
 ```
 
-##### getting started
+#### getting started
 
 open terminal(command line):
 
@@ -24,7 +24,7 @@ $ curl localhost:5000   // works
 $ npm test              // start mocha/chai test
 ```
 
-##### using postman
+#### using postman
 
 ```
 GET     -->  http://localhost:5000/api/phonenumbers/parse/text/Seneca%20Phone%20Number%3A%20416-491-5050%2C6478603041%2C647-860-3041
