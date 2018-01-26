@@ -19,7 +19,7 @@ $ npm install           // install requierd package dependencies
 
 $ npm start             // start localhost server
 
-$ curl localhost:5000   // works
+$ curl localhost:5000   // will print "works"
 
 $ npm test              // start mocha/chai test
 ```
@@ -35,6 +35,6 @@ POST    -->  http://localhost:5000/api/phonenumbers/parse/file
 
 header  -->  content-type: multipart/form-data
 
-body    -->  expect a key-value pair, upload the base64.txt as value, and set "file" as key
+body    -->  expect a key-value pair, upload the base64.txt as value, and set string "file" as key
 
 ```
