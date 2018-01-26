@@ -24,7 +24,7 @@ $ curl localhost:5000   // works
 $ npm test              // start mocha/chai test
 ```
 
-#### using postman
+#### using http client
 
 ```
 GET     -->  http://localhost:5000/api/phonenumbers/parse/text/Seneca%20Phone%20Number%3A%20416-491-5050%2C6478603041%2C647-860-3041
@@ -33,9 +33,8 @@ GET     -->  http://localhost:5000/api/phonenumbers/parse/text/Seneca%20Phone%20
 ```
 POST    -->  http://localhost:5000/api/phonenumbers/parse/file
 
-header  -->  content-type: text/plain
+header  -->  content-type: multipart/form-data
 
-encoded -->  form-data
+body    -->  expect a key-value pair, upload the base64.txt as value, and set "file" as key
 
-body    --> { "file": "base64.txt" }
 ```
