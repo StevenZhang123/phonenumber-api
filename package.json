@@ -4,7 +4,7 @@
   "description": "api that extracts phone numbers from submitted resources",
   "main": "app.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --exit"
   },
   "author": "zhihao cai",
   "license": "MIT",
