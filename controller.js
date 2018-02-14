@@ -4,8 +4,6 @@ var bodyParser = require('body-parser');
 var utils = require('./utils');                 // import lib
 var multer  = require('multer');                // handle multipart
 var textract = require('textract');
-const readChunk = require('read-chunk');
-const fileType = require('file-type');
 //var upload = multer({ dest: 'uploads/' });
 
 var storage = multer.diskStorage({
