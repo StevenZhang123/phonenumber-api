@@ -38,3 +38,10 @@ header  -->  content-type: multipart/form-data
 body    -->  expect a key-value pair, upload the base64.txt as value, and set string "file" as key
 
 ```
+
+#### using curl
+```
+GET     --> curl localhost:5000/api/phonenumbers/parse/text/Seneca%20Phone%20Number%3A%20416-491-5050%2C6478603041%2C647-860-3041 
+
+POST    --> curl -F file=@base64.docx localhost:5000/api/phonenumbers/parse/file
+```
