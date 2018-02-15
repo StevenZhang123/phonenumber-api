@@ -28,9 +28,7 @@ $ npm test              // start mocha/chai test
 
 ```
 GET     -->  http://localhost:5000/api/phonenumbers/parse/text/Seneca%20Phone%20Number%3A%20416-491-5050%2C6478603041%2C647-860-3041
-```
 
-```
 POST    -->  http://localhost:5000/api/phonenumbers/parse/file
 
 header  -->  content-type: multipart/form-data
