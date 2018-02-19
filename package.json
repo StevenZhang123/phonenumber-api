@@ -20,5 +20,8 @@
     "read-chunk": "^2.1.0",
     "shrinkwrap": "^0.4.0",
     "textract": "^2.2.0"
-  }
+  },
+  "engines": {
+    "node": "8.9.1"
+  },
 }
